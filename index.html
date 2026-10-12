@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--
+  ============================================================
+  HOW TO EDIT THIS SITE (one file, no build step)
+  1. Colours/fonts: change the values in :root { ... } in the <style> block.
+  2. Text: each section below is marked with  <!-- ===== NAME ===== -->.
+     Change the words between the tags; keep the tags themselves.
+  3. New job: copy one <div class="tl-item"> block in EXPERIENCE.
+  4. New project: copy one <article class="work-item"> block in WORK.
+  5. After publishing, update the title/description/JSON-LD if your role changes.
+  ============================================================
+-->
+<title>Mohamed Suhail S | Frontend Developer &amp; UI/UX Designer, Chennai</title>
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Mohamed Suhail S">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2316130F'/%3E%3Ctext x='50' y='66' font-size='46' text-anchor='middle' font-family='Georgia,serif' fill='%230A66C2'%3EMS%3C/text%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mohamed Suhail S | Frontend Developer &amp; UI/UX Designer">
+<meta name="twitter:description" content="Frontend development, UI/UX design and digital marketing. Based in Chennai, India.">
+<meta name="description" content="Portfolio of Mohamed Suhail S, a Chennai-based frontend developer and UI/UX designer working across HTML, CSS, JavaScript, Figma and digital marketing.">
+<meta name="theme-color" content="#16130F">
+<meta property="og:title" content="Mohamed Suhail S — Frontend Developer &amp; UI/UX Designer">
+<meta property="og:description" content="Frontend development, UI/UX design and digital marketing work, based in Chennai, India.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Mohamed Suhail S","alternateName":"Mohamed Suhail","jobTitle":"Frontend Developer and UI/UX Designer","description":"Frontend developer and UI/UX designer based in Chennai, India, working with HTML, CSS, JavaScript and Figma.","email":"mailto:mohammedsuhail551@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressRegion":"Tamil Nadu","addressCountry":"IN"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University College of Engineering Nagercoil"},"worksFor":{"@type":"Organization","name":"iFelse Technologies"},"knowsAbout":["HTML","CSS","JavaScript","UI/UX Design","Figma","Digital Marketing"],"sameAs":["https://www.linkedin.com/in/mohamed-suhail-s"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* THEME: change colours here */
+  :root{
+    --bg:#16130F;
+    --bg-panel:#1D1811;
+    --ink:#F3ECDF;
+    --ink-dim:#AFA592;
+    --accent:#C9974C;
+    --accent-2:#7C9B90;
+    --li-blue:#0A66C2;
+    --line:rgba(243,236,223,0.14);
+    --ease:cubic-bezier(.16,.84,.44,1);
+    color-scheme: dark;
+    box-sizing:border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *,*::before,*::after{box-sizing:inherit;}
+  html{scroll-padding-top: calc(64px + env(safe-area-inset-top, 0px)); scroll-behavior:smooth;}
+  body{
+    margin:0; position:relative;
+    background:var(--bg); color:var(--ink);
+    font-family:'Work Sans', -apple-system, sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  body::after{
+    content:""; position:fixed; inset:0; z-index:50; pointer-events:none;
+    opacity:.035; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a{color:inherit;}
+  a:focus-visible, .btn:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px;}
+  .wrap{max-width:760px; margin:0 auto; padding:0 28px;}
+
+  header.nav{
+    position:sticky; top:0; z-index:10; top: env(safe-area-inset-top, 0px);
+    background:rgba(22,19,15,0.86); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:760px; margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:10px 22px;
+  }
+  .nav-mark{font-family:'Fraunces', serif; font-size:1.05rem; letter-spacing:.01em;}
+  .nav-links{display:flex; gap:20px; flex-wrap:wrap; list-style:none; margin:0; padding:0;}
+  .nav-links a{
+    font-size:.9rem; text-decoration:none; color:var(--ink-dim);
+    border-bottom:1px solid transparent; padding-bottom:2px;
+    transition:color .25s var(--ease), border-color .25s var(--ease);
+  }
+  .nav-links a:hover, .nav-links a:focus-visible, .nav-links a.active{color:var(--ink); border-color:var(--accent);}
+
+  section{padding:72px 0;}
+  h2{font-family:'Fraunces', serif; font-weight:600; font-size:1.5rem; margin:0 0 28px; color:var(--ink);}
+  p{color:var(--ink-dim); margin:0 0 14px; max-width:62ch;}
+
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in-view{opacity:1; transform:none;}
+  @media (prefers-reduced-motion:reduce){ .reveal{opacity:1; transform:none; transition:none;} }
+
+  .hero{padding-top:56px; position:relative; min-height:calc(80vh - 64px); min-height:calc(80svh - 64px); display:flex; align-items:center; overflow:hidden;}
+  .hero::before{
+    content:""; position:absolute; top:-8%; left:-6%; width:440px; height:440px;
+    background:radial-gradient(circle, rgba(201,151,76,0.16), transparent 70%);
+    pointer-events:none; z-index:-1;
+  }
+  .eyebrow-role{color:var(--accent); font-size:.98rem; margin:0 0 16px; font-weight:500;}
+  .hero h1.name{
+    font-family:'Work Sans', -apple-system, sans-serif; font-weight:600;
+    font-size:clamp(2.8rem, 10vw, 4.8rem); line-height:1.05; letter-spacing:-.01em; margin:0 0 22px;
+  }
+  .hero h1.name em{font-style:normal; font-weight:700; color:var(--li-blue);}
+  .hero h1.name::after{
+    content:""; display:block; width:72px; height:3px; margin-top:20px;
+    background:var(--li-blue); transform-origin:left; animation:drawRule .9s var(--ease) .75s both;
+  }
+  @keyframes drawRule{ from{transform:scaleX(0);} to{transform:scaleX(1);} }
+  @media (prefers-reduced-motion:reduce){ .hero h1.name::after{animation:none;} }
+  .tagline{font-family:'Fraunces', serif; font-style:italic; font-size:1.3rem; color:var(--ink); margin:0 0 16px;}
+  .nav-mark{display:inline-flex; align-items:center; gap:10px;}
+  .nav-mark .mono{
+    width:28px; height:28px; border:1px solid var(--accent); border-radius:50%;
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:'Work Sans', sans-serif; font-size:.68rem; font-weight:600; color:var(--accent);
+  }
+  .hero p.lede{font-size:1.08rem; max-width:52ch;}
+  .hero-links{display:flex; gap:14px; flex-wrap:wrap; margin-top:26px;}
+  .hero-inner{display:grid; grid-template-columns:1fr; gap:36px; align-items:center;}
+  @media (min-width:680px){ .hero-inner{grid-template-columns:1fr 170px;} }
+  .avatar{
+    width:140px; height:140px; border-radius:50%; margin:0 auto;
+    border:1px solid var(--line); background:var(--bg-panel);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; font-size:2.4rem; color:var(--accent);
+  }
+  @keyframes riseIn{ from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);} }
+  .rise-1,.rise-2,.rise-3,.rise-4,.rise-5,.rise-6{opacity:0; animation:riseIn .8s var(--ease) forwards;}
+  .rise-1{animation-delay:.05s;} .rise-2{animation-delay:.17s;} .rise-3{animation-delay:.3s;}
+  .rise-4{animation-delay:.43s;} .rise-5{animation-delay:.54s;} .rise-6{animation-delay:.66s;}
+  @media (prefers-reduced-motion:reduce){ .rise-1,.rise-2,.rise-3,.rise-4,.rise-5,.rise-6{animation:none; opacity:1;} }
+
+  .btn{
+    display:inline-block; padding:11px 20px; border-radius:2px; text-decoration:none;
+    font-size:.94rem; font-weight:500; border:1px solid var(--line);
+    transition:border-color .25s var(--ease), background .25s var(--ease), transform .25s var(--ease);
+  }
+  .btn.primary{background:var(--accent); color:#16130F; border-color:var(--accent);}
+  .btn.primary:hover{background:#dba95c; transform:translateY(-2px);}
+  .btn.ghost:hover{border-color:var(--accent); color:var(--ink); transform:translateY(-2px);}
+  .status{display:inline-flex; align-items:center; gap:9px; font-size:.88rem; color:var(--ink-dim); margin-top:24px;}
+  .status .dot{width:7px; height:7px; border-radius:50%; background:var(--accent-2); animation:pulse 2.4s infinite;}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,155,144,.45);} 70%{box-shadow:0 0 0 8px rgba(124,155,144,0);} 100%{box-shadow:0 0 0 0 rgba(124,155,144,0);}}
+  @media (prefers-reduced-motion:reduce){.status .dot{animation:none;}}
+
+  .panel-section{background:var(--bg-panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+
+  .capability-grid{display:grid; grid-template-columns:1fr; gap:28px;}
+  @media (min-width:600px){ .capability-grid{grid-template-columns:1fr 1fr;} }
+  .capability{border:1px solid var(--line); border-radius:6px; padding:26px; transition:transform .3s var(--ease), border-color .3s var(--ease), box-shadow .3s var(--ease);}
+  .capability:hover{transform:translateY(-4px); border-color:var(--accent-2); box-shadow:0 14px 30px rgba(0,0,0,.28);}
+  .capability h3{font-family:'Fraunces', serif; font-size:1.15rem; margin:16px 0 12px; color:var(--ink);}
+  .capability ul{margin:0; padding-left:18px; color:var(--ink-dim);}
+  .capability li{margin-bottom:6px; font-size:.94rem;}
+  .cap-icon{width:38px; height:38px;}
+  .design-icon{display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:5px;}
+  .design-icon span{border-radius:3px; background:rgba(124,155,144,0.3);}
+  .design-icon span:first-child{background:var(--accent-2);}
+  .code-icon{font-family:'Fraunces', serif; font-size:1.7rem; color:var(--accent); line-height:1;}
+
+  .work-list{display:flex; flex-direction:column;}
+  .work-item{padding:26px 0; border-top:1px solid var(--line); transition:padding-left .3s var(--ease);}
+  .work-item:first-child{border-top:none; padding-top:0;}
+  .work-item:hover{padding-left:8px;}
+  .work-role{color:var(--accent); font-size:.86rem; font-weight:500; margin:0 0 10px;}
+  .work-item h3{font-family:'Fraunces', serif; font-size:1.3rem; margin:0 0 8px; color:var(--ink); transition:color .25s var(--ease);}
+  .work-item:hover h3{color:var(--accent);}
+
+  .skills-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:26px 24px;}
+  .skill-group h3{font-size:.82rem; color:var(--ink-dim); font-weight:500; margin:0 0 10px;}
+  .pill-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .pill{font-size:.86rem; padding:6px 12px; border:1px solid var(--line); border-radius:2px; color:var(--ink); transition:border-color .25s var(--ease), transform .25s var(--ease);}
+  .pill:hover{border-color:var(--accent); transform:translateY(-2px);}
+
+  .timeline{border-left:1px solid var(--line); margin-left:4px;}
+  .tl-item{
+    position:relative; padding:2px 0 34px 26px;
+    opacity:0; transform:translateX(-12px);
+    transition:opacity .6s var(--ease), transform .6s var(--ease);
+  }
+  .timeline.in-view .tl-item{opacity:1; transform:none;}
+  .timeline.in-view .tl-item:nth-child(1){transition-delay:.05s;}
+  .timeline.in-view .tl-item:nth-child(2){transition-delay:.18s;}
+  .timeline.in-view .tl-item:nth-child(3){transition-delay:.31s;}
+  @media (prefers-reduced-motion:reduce){ .tl-item{opacity:1; transform:none; transition:none;} }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:""; position:absolute; left:-5px; top:6px; width:9px; height:9px;
+    border-radius:50%; background:var(--bg); border:2px solid var(--accent-2);
+  }
+  .tl-date{color:var(--accent); font-size:.86rem; font-weight:500; margin-bottom:4px;}
+  .tl-role{font-family:'Fraunces', serif; font-size:1.15rem; margin:0 0 2px; color:var(--ink);}
+  .tl-org{color:var(--ink-dim); font-size:.92rem; margin-bottom:8px;}
+
+  .edu-cert{display:grid; grid-template-columns:1fr; gap:36px;}
+  @media (min-width:600px){ .edu-cert{grid-template-columns:1fr 1fr;} }
+  .edu-cert h3{font-family:'Fraunces', serif; font-size:1.1rem; font-weight:600; margin:0 0 10px; color:var(--ink);}
+  .edu-cert ul{margin:0; padding-left:18px; color:var(--ink-dim);}
+  .edu-cert li{margin-bottom:6px; font-size:.95rem;}
+
+  footer{border-top:1px solid var(--line); padding:48px 0 calc(48px + env(safe-area-inset-bottom, 0px));}
+  footer h2{margin-bottom:14px;}
+  .contact-list{display:flex; flex-direction:column; gap:8px; margin-bottom:20px;}
+  .contact-list a{
+    text-decoration:none; color:var(--ink); border-bottom:1px solid var(--line);
+    display:inline-block; width:fit-content; transition:border-color .25s var(--ease), color .25s var(--ease);
+  }
+  .contact-list a:hover{border-color:var(--accent); color:var(--accent);}
+  .foot-note{color:var(--ink-dim); font-size:.85rem;}
+
+  .progress-bar{
+    position:fixed; top:env(safe-area-inset-top, 0px); left:0; height:2px; width:0%;
+    background:var(--accent); z-index:60; pointer-events:none;
+  }
+  .skip-link{
+    position:fixed; top:-40px; left:8px; z-index:70; background:var(--accent); color:#16130F;
+    padding:8px 14px; border-radius:2px; font-size:.85rem; text-decoration:none; transition:top .2s var(--ease);
+  }
+  .skip-link:focus{top:8px;}
+
+  @media print{
+    header.nav, .progress-bar, .skip-link, .status .dot, body::after{display:none !important;}
+    body{background:#fff; color:#111;}
+    .hero::before{display:none;}
+    section, .reveal, .tl-item{opacity:1 !important; transform:none !important;}
+    a{color:#111; text-decoration:underline;}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#top">Skip to content</a>
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <span class="nav-mark"><span class="mono" aria-hidden="true">MS</span>Mohamed Suhail S</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- ===== HERO (name, headline, links) ===== -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div>
+      <h1 class="name rise-1"><span>Mohamed</span> <em>Suhail S</em></h1>
+      <p class="eyebrow-role rise-2">Frontend Developer | HTML • CSS • JavaScript | UI/UX Design | Digital Marketing</p>
+      <p class="tagline rise-3">Building clean interfaces, grounded in real content.</p>
+      <p class="lede rise-3">Computer Science graduate from Nagercoil, now working across frontend development, UI/UX design and digital marketing in Chennai. I like projects where design decisions and code both have to hold up.</p>
+      <div class="hero-links rise-4">
+        <a class="btn primary" href="mailto:mohammedsuhail551@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/mohamed-suhail-s" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="status rise-5"><span class="dot"></span> Currently designing for Ilmify at iFelse Technologies</div>
+    </div>
+    <div class="avatar rise-6" aria-hidden="true">MS</div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="reveal">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I graduated in 2025 with a B.E. in Computer Science from University College of Engineering, Nagercoil. My hands-on work spans HTML, CSS and JavaScript, alongside UI/UX design in Figma and hands-on digital marketing — content, copy and campaign work rather than just theory.</p>
+    <p>I'm currently based in Chennai, working full-time in UI/UX and digital marketing while continuing to build out my frontend development skills. Open to UX design, UX engineering, frontend and web development roles as an immediate joiner, anywhere in India.</p>
+  </div>
+</section>
+
+<!-- ===== DESIGN AND DEVELOPMENT ===== -->
+<section id="approach" class="reveal">
+  <div class="wrap">
+    <h2>Design and development</h2>
+    <p>I work across both sides of the interface — designing it in Figma, then building it in code.</p>
+    <div class="capability-grid">
+      <div class="capability">
+        <div class="cap-icon design-icon" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <h3>UI/UX Design</h3>
+        <ul>
+          <li>Wireframing and prototyping in Figma</li>
+          <li>Visual and interaction design</li>
+          <li>Marketing creative — content and campaigns</li>
+        </ul>
+      </div>
+      <div class="capability">
+        <div class="cap-icon code-icon" aria-hidden="true">&lt;/&gt;</div>
+        <h3>Frontend Development</h3>
+        <ul>
+          <li>Semantic, responsive HTML &amp; CSS</li>
+          <li>Interactive JavaScript</li>
+          <li>Git version control, SQL fundamentals</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SELECTED WORK ===== -->
+<section id="work" class="panel-section reveal">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <div class="work-list">
+      <article class="work-item">
+        <p class="work-role">UI/UX Design &amp; Digital Marketing — iFelse Technologies</p>
+        <h3>Ilmify</h3>
+        <p>An education management app built for Maktabs and Madrasas. My work covers UI/UX design in Figma, short-form video content and marketing copy for the app.</p>
+      </article>
+      <article class="work-item">
+        <p class="work-role">Full Stack Development Intern — AgileTribers</p>
+        <h3>Hotel Guest Reservation System</h3>
+        <p>A guest reservation system built over a four-month internship using HTML, CSS and JavaScript — my first real project applying responsive, user-focused design.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="reveal">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">July 2026 — Present</div>
+        <div class="tl-role">UI/UX Designer &amp; Digital Marketing</div>
+        <div class="tl-org">iFelse Technologies, Chennai</div>
+        <p>Design and marketing work on Ilmify, an Islamic education management system built for Maktabs and Madrasas — UI/UX in Figma alongside content and campaign work.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">February — May 2025</div>
+        <div class="tl-role">Full Stack Development Intern</div>
+        <div class="tl-org">AgileTribers, Nagercoil</div>
+        <p>Built a Hotel Guest Reservation System, working across HTML, CSS and JavaScript with an introduction to responsive, user-focused web design.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">May 2024</div>
+        <div class="tl-role">Web Developer</div>
+        <div class="tl-org">Appin Technology, Coimbatore</div>
+        <p>Short-term web development placement focused on core front-end fundamentals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="reveal">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="pill-row">
+          <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Programming &amp; Data</h3>
+        <div class="pill-row">
+          <span class="pill">Java</span><span class="pill">Python</span><span class="pill">C</span><span class="pill">SQL / MySQL</span><span class="pill">Git</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Design &amp; Marketing</h3>
+        <div class="pill-row">
+          <span class="pill">Figma</span><span class="pill">UI/UX Design</span><span class="pill">Digital Marketing</span><span class="pill">Content Writing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION AND CERTIFICATIONS ===== -->
+<section id="education" class="reveal">
+  <div class="wrap">
+    <h2>Education &amp; Certifications</h2>
+    <div class="edu-cert">
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li>B.E. Computer Science Engineering — University College of Engineering, Nagercoil (2021–2025)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>Complete Figma Course: Web &amp; Mobile Projects</li>
+          <li>Advanced Digital Marketing Combo</li>
+          <li>Fundamentals of Meta Advertising</li>
+          <li>AI Tools Workshop</li>
+          <li>What Is Business Analysis?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== CONTACT (email, phone, LinkedIn) ===== -->
+<footer id="contact" class="reveal">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p>Immediate joiner, open to relocation across India.</p>
+    <div class="contact-list">
+      <a href="mailto:mohammedsuhail551@gmail.com">mohammedsuhail551@gmail.com</a>
+      <a href="tel:+918056967464">+91 80569 67464</a>
+      <a href="https://www.linkedin.com/in/mohamed-suhail-s" target="_blank" rel="noopener">linkedin.com/in/mohamed-suhail-s</a>
+    </div>
+    <p class="foot-note">Chennai, Tamil Nadu, India</p>
+    <p class="foot-note">© <span id="year"></span> Mohamed Suhail S</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in-view'); });
+    return;
+  }
+  var revealObserver = new IntersectionObserver(function(entries, obs){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('in-view');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {threshold:.15});
+  document.querySelectorAll('.reveal, .timeline').forEach(function(el){ revealObserver.observe(el); });
+
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  var navObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        navLinks.forEach(function(l){ l.classList.remove('active'); l.removeAttribute('aria-current'); });
+        var match = document.querySelector('.nav-links a[href="#' + entry.target.id + '"]');
+        if(match){ match.classList.add('active'); match.setAttribute('aria-current','true'); }
+      }
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section[id]').forEach(function(s){ navObserver.observe(s); });
+
+  var bar = document.getElementById('progressBar');
+  function updateProgress(){
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if(bar) bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress, {passive:true});
+  updateProgress();
+
+  var yearEl = document.getElementById('year');
+  if(yearEl) yearEl.textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
